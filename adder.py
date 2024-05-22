@@ -7,12 +7,14 @@ This is a temporary script file.
 
 # Function to add some numbers
 # Better defaults
-def add(a=0,b=0,c=0):
+def add(a=0,b=0,c=0, show = False):
     ans = a+b+c
+    if show:
+        print(f'{a}+{b}+{c}={ans}')
     return ans
 
 # Print the answer to demonstrate the functionality
-print(add(3,7,2))
+print(add(3,7,2, True))
 
 # Test case
 # 1,2,3 -> 6
@@ -20,3 +22,4 @@ if add(1,2,3) == 6:
     print("Test passed")
 else:
     print("Test failed")
+

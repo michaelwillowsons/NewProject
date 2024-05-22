@@ -6,8 +6,8 @@ This is a temporary script file.
 """
 
 # Function to add some numbers
-
-def add(a,b,c):
+# Better defaults
+def add(a=0,b=0,c=0):
     ans = a+b+c
     return ans
 
